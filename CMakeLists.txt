@@ -32,8 +32,9 @@ set(LIBRARIES "glfw;Vulkan::Vulkan")
 include_directories(${GLFW_DIR}/deps)
 
 # Src files.
-file(GLOB sources src/*.cpp)
+# file(GLOB sources src/*.cpp)
 
-add_executable(Vulkan-imgui ${sources} ${IMGUI_DIR}/backends/imgui_impl_glfw.cpp ${IMGUI_DIR}/backends/imgui_impl_vulkan.cpp ${IMGUI_SRC})
+# add_executable(Vulkan-imgui ${sources} ${IMGUI_DIR}/backends/imgui_impl_glfw.cpp ${IMGUI_DIR}/backends/imgui_impl_vulkan.cpp ${IMGUI_SRC})
+add_executable(Vulkan-imgui src/test.cpp ${IMGUI_DIR}/backends/imgui_impl_glfw.cpp ${IMGUI_DIR}/backends/imgui_impl_vulkan.cpp ${IMGUI_SRC})
 target_link_libraries(Vulkan-imgui ${LIBRARIES})
 target_compile_definitions(Vulkan-imgui PUBLIC -DImTextureID=ImU64)

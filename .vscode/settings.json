@@ -1,0 +1,10 @@
+{
+    "code-runner.executorMap": {
+        "cpp": "cd $dir/../builds && make && ./Vulkan-imgui",
+        "cmake": "cd $dir/builds && cmake .."
+    },
+    "files.associations": {
+        "*.vert": "GLSL",
+        "*.frag": "GLSL"
+    }
+}
