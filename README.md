@@ -16,8 +16,7 @@ Now, moving inside the project directory, propagate the git submodules into your
 
 ```bash
 cd Vulkan-imgui
-git submodule init
-git submodule update
+git submodule update --init --recursive
 ```
 
 Finally, to build and run utilizing [CMake](https://cmake.org/):
